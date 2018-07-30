@@ -1,0 +1,26 @@
+{
+  "name": "web-crawler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && node ./build/app.js",
+    "start-heroku": "tsc && node ./build/app.js",
+    "casper": "tsc && NODE_ENV=casper  casperjs ./build/app.js",
+    "electron": "tsc && NODE_ENV=electron electron ./build/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/casperjs": "^1.1.0",
+    "@types/node": "^10.5.4",
+    "casperjs": "^1.1.4",
+    "electron": "^2.0.5"
+  },
+  "dependencies": {
+    "cheerio-httpcli": "^0.7.3",
+    "instagram-crawling": "^1.1.2"
+  }
+}
